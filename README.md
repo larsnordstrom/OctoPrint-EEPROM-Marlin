@@ -7,4 +7,4 @@ This plugin is designed to get, change and save the values in the EEPROM of your
 Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
 or manually using this URL:
 
-    https://github.com/amsbr/OctoPrint-EEPROM-Marlin/archive/master.zip
+    https://github.com/larsnordstrom/OctoPrint-EEPROM-Marlin/archive/master.zip
