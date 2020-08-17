@@ -29,7 +29,7 @@ $(function () {
             self.eepromM666RegEx = /M666 ([X])(.*)[^0-9]([Y])(.*)[^0-9]([Z])(.*)/;//delta Enstop adjustement
 
             // Specific versions
-            if (version == "latest" || version == "Marlin bugfix-2.0.x" || version == "Marlin 2.0.4" || version == "Marlin 2.0.4.1" || version == "Marlin 2.0.4.2" || version == "Marlin 2.0.4.3" || version == "Marlin 2.0.4.4" || version == "Marlin 2.0.4.5") {
+            if (version == "Marlin bugfix-2.0.x") {
                 self.eepromM900RegEx = /M900 ([K])([0-9.]+)(.*)/;//bugfix2.0.x
                 //Advanced: B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> X<max_x_jerk> Y<max_y_jerk> Z<max_z_jerk> E<max_e_jerk> J<junction_deviation>
                 self.eepromM205RegEx = /M205 ([B])([0-9.]*) ([S])([0-9.]*) ([T])([0-9.]*) ([X])?([0-9.]*)? ?([Y])?([0-9.]*)? ?([Z])?([0-9.]*)? ?([E])?([0-9.]*)? ?([J])?([0-9.]*)?/;
