@@ -1,7 +1,7 @@
 # coding=utf-8
 from __future__ import absolute_import
 
-### (Don't forget to remove me)
+# (Don't forget to remove me)
 # This is a basic skeleton for your plugin's __init__.py. You probably want to adjust the class name of your plugin
 # as well as the plugin mixins it's subclassing from. This is really just a basic skeleton to get you started,
 # defining your plugin as a template plugin.
@@ -11,8 +11,9 @@ from __future__ import absolute_import
 import octoprint.plugin
 import octoprint.server
 
+
 class Eeprom_marlinPlugin(octoprint.plugin.AssetPlugin,
-                            octoprint.plugin.TemplatePlugin):
+                          octoprint.plugin.TemplatePlugin):
     def get_assets(self):
         return dict(
             js=["js/eeprom_marlin.js"]
@@ -20,7 +21,8 @@ class Eeprom_marlinPlugin(octoprint.plugin.AssetPlugin,
 
     def get_template_configs(self):
         return [
-            dict(type="settings", template="eeprom_marlin_settings.jinja2", custom_bindings=True)
+            dict(type="settings", template="eeprom_marlin_settings.jinja2",
+                 custom_bindings=True)
         ]
 
     def get_update_information(self):
@@ -40,7 +42,10 @@ class Eeprom_marlinPlugin(octoprint.plugin.AssetPlugin,
             )
         )
 
+
 __plugin_name__ = "EEPROM Marlin 2.0 Editor Plugin"
+__plugin_pythoncompat__ = ">=2.7,<4"
+
 
 def __plugin_load__():
     global __plugin_implementation__
